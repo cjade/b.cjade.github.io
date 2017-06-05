@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mcoo.me/"/>
-  <updated>2017-06-05T12:30:42.000Z</updated>
+  <updated>2017-06-05T11:56:46.000Z</updated>
   <id>http://mcoo.me/</id>
   
   <author>
@@ -16,11 +16,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>测试</title>
+    <link href="http://mcoo.me/2017/06/05/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://mcoo.me/2017/06/05/测试/</id>
+    <published>2017-06-05T11:56:19.000Z</published>
+    <updated>2017-06-05T11:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你是&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>laravel5.4整合极验验证码3.0</title>
-    <link href="http://mcoo.me/22017/06/05/laravel5-4%E6%95%B4%E5%90%88%E6%9E%81%E9%AA%8C%E9%AA%8C%E8%AF%81%E7%A0%813-0/"/>
-    <id>http://mcoo.me/22017/06/05/laravel5-4整合极验验证码3-0/</id>
-    <published>+022017-06-05T10:06:27.000Z</published>
-    <updated>2017-06-05T12:30:42.000Z</updated>
+    <link href="http://mcoo.me/2017/06/05/laravel5-4%E6%95%B4%E5%90%88%E6%9E%81%E9%AA%8C%E9%AA%8C%E8%AF%81%E7%A0%813-0/"/>
+    <id>http://mcoo.me/2017/06/05/laravel5-4整合极验验证码3-0/</id>
+    <published>2017-06-05T10:06:27.000Z</published>
+    <updated>2017-06-05T12:42:21.000Z</updated>
     
     <summary type="html">
     
@@ -38,23 +55,6 @@
       <category term="laravel" scheme="http://mcoo.me/tags/laravel/"/>
     
       <category term="geetest" scheme="http://mcoo.me/tags/geetest/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试</title>
-    <link href="http://mcoo.me/2017/06/05/%E6%B5%8B%E8%AF%95/"/>
-    <id>http://mcoo.me/2017/06/05/测试/</id>
-    <published>2017-06-05T11:56:19.000Z</published>
-    <updated>2017-06-05T11:56:46.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你是&lt;/p&gt;
-
-    
-    </summary>
-    
     
   </entry>
   
