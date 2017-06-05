@@ -4,9 +4,9 @@
   <subtitle>Kevin&#39;s Home</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://keyin.me/"/>
-  <updated>2017-06-05T10:51:50.000Z</updated>
-  <id>http://keyin.me/</id>
+  <link href="http://mcoo.me/"/>
+  <updated>2017-06-05T12:30:42.000Z</updated>
+  <id>http://mcoo.me/</id>
   
   <author>
     <name>Kevin Tan</name>
@@ -17,27 +17,51 @@
   
   <entry>
     <title>laravel5.4整合极验验证码3.0</title>
-    <link href="http://keyin.me/2017/06/05/laravel5-4%E6%95%B4%E5%90%88%E6%9E%81%E9%AA%8C%E9%AA%8C%E8%AF%81%E7%A0%813-0/"/>
-    <id>http://keyin.me/2017/06/05/laravel5-4整合极验验证码3-0/</id>
-    <published>2017-06-05T10:06:27.000Z</published>
-    <updated>2017-06-05T10:51:50.000Z</updated>
+    <link href="http://mcoo.me/22017/06/05/laravel5-4%E6%95%B4%E5%90%88%E6%9E%81%E9%AA%8C%E9%AA%8C%E8%AF%81%E7%A0%813-0/"/>
+    <id>http://mcoo.me/22017/06/05/laravel5-4整合极验验证码3-0/</id>
+    <published>+022017-06-05T10:06:27.000Z</published>
+    <updated>2017-06-05T12:30:42.000Z</updated>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;注册账号&lt;br&gt;注册地址:&lt;a href=&quot;http://www.geetest.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.geetest.com/&lt;/a&gt;&lt;br&gt;注册之后获得最新的ID和KEY&lt;br&gt;2·下
+      &lt;h2 id=&quot;注册账号&quot;&gt;&lt;a href=&quot;#注册账号&quot; class=&quot;headerlink&quot; title=&quot;注册账号&quot;&gt;&lt;/a&gt;注册账号&lt;/h2&gt;&lt;p&gt;注册地址:&lt;a href=&quot;http://www.geetest.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.geetest.com/&lt;/a&gt;&lt;br&gt;注册之后获得最新的ID和KEY&lt;/p&gt;
+&lt;h2 id=&quot;下载sdk&quot;&gt;&lt;a href=&quot;#下载sdk&quot; class=&quot;headerlink&quot; title=&quot;下载sdk&quot;&gt;&lt;/a&gt;下载sdk&lt;/h2&gt;&lt;p&gt;把下载下来的sdk改名为geetest放入vendor文件下&lt;br&gt;可以把geetest文件下的其他文件都删除只保留lib文件&lt;/p&gt;
+&lt;p&gt;3·把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法&lt;br&gt;
     
     </summary>
     
+      <category term="php" scheme="http://mcoo.me/categories/php/"/>
     
-      <category term="laravel5.4" scheme="http://keyin.me/tags/laravel5-4/"/>
+      <category term="laravel" scheme="http://mcoo.me/categories/php/laravel/"/>
+    
+    
+      <category term="laravel" scheme="http://mcoo.me/tags/laravel/"/>
+    
+      <category term="geetest" scheme="http://mcoo.me/tags/geetest/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://mcoo.me/2017/06/05/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://mcoo.me/2017/06/05/测试/</id>
+    <published>2017-06-05T11:56:19.000Z</published>
+    <updated>2017-06-05T11:56:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你是&lt;/p&gt;
+
+    
+    </summary>
+    
     
   </entry>
   
   <entry>
     <title>hello-world</title>
-    <link href="http://keyin.me/2017/06/05/hello-world-1/"/>
-    <id>http://keyin.me/2017/06/05/hello-world-1/</id>
+    <link href="http://mcoo.me/2017/06/05/hello-world-1/"/>
+    <id>http://mcoo.me/2017/06/05/hello-world-1/</id>
     <published>2017-06-05T09:05:12.000Z</published>
     <updated>2017-06-05T09:06:29.000Z</updated>
     
@@ -53,17 +77,39 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://keyin.me/2017/06/05/hello-world/"/>
-    <id>http://keyin.me/2017/06/05/hello-world/</id>
+    <link href="http://mcoo.me/2017/06/05/hello-world/"/>
+    <id>http://mcoo.me/2017/06/05/hello-world/</id>
     <published>2017-06-05T08:54:33.000Z</published>
-    <updated>2017-06-05T08:54:33.000Z</updated>
+    <updated>2017-06-05T12:37:44.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Centos初始化</title>
+    <link href="http://mcoo.me/2017/01/03/CentOS-1-3/"/>
+    <id>http://mcoo.me/2017/01/03/CentOS-1-3/</id>
+    <published>2017-01-03T08:21:43.000Z</published>
+    <updated>2017-06-05T12:22:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;换源&quot;&gt;&lt;a href=&quot;#换源&quot; class=&quot;headerlink&quot; title=&quot;换源&quot;&gt;&lt;/a&gt;换源&lt;/h2&gt;&lt;h3 id=&quot;备份&quot;&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;写入国内源-centos-7&quot;&gt;&lt;a href=&quot;#写入国内源-centos-7&quot; class=&quot;headerlink&quot; title=&quot;写入国内源(centos 7)&quot;&gt;&lt;/a&gt;写入国内源(centos 7)&lt;/h3&gt;&lt;p&gt;ustc： &lt;a href=&quot;https://lug.ustc.edu.cn/wiki/mirrors/help/centos&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://lug.ustc.edu.cn/wiki/mirrors/help/centos&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://mcoo.me/categories/Linux/"/>
+    
+    
+      <category term="centos" scheme="http://mcoo.me/tags/centos/"/>
     
   </entry>
   

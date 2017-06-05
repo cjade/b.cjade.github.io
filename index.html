@@ -16,7 +16,7 @@
 <meta name="keywords" content="blog,stkevintan,IT,Web Front End,Kevin Tan,kevinsfork">
 <meta property="og:type" content="website">
 <meta property="og:title" content="World of Forks">
-<meta property="og:url" content="http://keyin.me/index.html">
+<meta property="og:url" content="http://mcoo.me/index.html">
 <meta property="og:site_name" content="World of Forks">
 <meta property="og:description" content="A blog of Kevin Tan">
 <meta name="twitter:card" content="summary">
@@ -140,8 +140,52 @@
   <section class="meta">
     
     <h2 class="title">
-      <a href="/2017/06/05/laravel5-4整合极验验证码3-0/">
+      <a href="/22017/06/05/laravel5-4整合极验验证码3-0/">
         laravel5.4整合极验验证码3.0
+      </a>
+    </h2>
+    
+    <time>
+      6月 5, 22017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/php/">php</a>, <a href="/categories/php/laravel/">laravel</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>注册地址:<a href="http://www.geetest.com/" target="_blank" rel="external">http://www.geetest.com/</a><br>注册之后获得最新的ID和KEY</p>
+<h2 id="下载sdk"><a href="#下载sdk" class="headerlink" title="下载sdk"></a>下载sdk</h2><p>把下载下来的sdk改名为geetest放入vendor文件下<br>可以把geetest文件下的其他文件都删除只保留lib文件</p>
+<p>3·把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法<br>
+
+    
+	  <div class="readmore">
+      <a href="/22017/06/05/laravel5-4整合极验验证码3-0/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/laravel/">laravel</a>
+      
+        <a href="/tags/geetest/">geetest</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/06/05/测试/">
+        测试
       </a>
     </h2>
     
@@ -151,33 +195,11 @@
 		
   </section>
   <section class="article typo">
-	  <ol>
-<li>注册账号<br>注册地址:<a href="http://www.geetest.com/" target="_blank" rel="external">http://www.geetest.com/</a><br>注册之后获得最新的ID和KEY<br>2·下载sdk<br>把下载下来的sdk改名为geetest放入vendor文件下<br>可以把geetest文件下的其他文件都删除只保留lib文件</li>
-</ol>
-<p>3·把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">pre_process</span><span class="params">($param, $new_captcha=<span class="number">1</span>)</span> </span>&#123;</div><div class="line">        $data = <span class="keyword">array</span>(<span class="string">'gt'</span>=&gt;<span class="keyword">$this</span>-&gt;captcha_id,</div><div class="line">                     <span class="string">'new_captcha'</span>=&gt;$new_captcha</div><div class="line">                );</div><div class="line">        $data = array_merge($data,$param);<span class="comment">//没有修改的这里可能会报错</span></div><div class="line">        $query = http_build_query($data);</div><div class="line">        $url = <span class="string">"http://api.geetest.com/register.php?"</span> . $query;</div><div class="line">        $challenge = <span class="keyword">$this</span>-&gt;send_request($url);</div><div class="line">        <span class="keyword">if</span> (strlen($challenge) != <span class="number">32</span>) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;failback_process();</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">$this</span>-&gt;success_process($challenge);</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>改成<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">pre_process</span><span class="params">($param, $new_captcha=<span class="number">1</span>)</span> </span>&#123;</div><div class="line">       $data = <span class="keyword">array</span>(<span class="string">'gt'</span>=&gt;<span class="keyword">$this</span>-&gt;captcha_id,</div><div class="line">                    <span class="string">'new_captcha'</span>=&gt;$new_captcha</div><div class="line">               );</div><div class="line">       <span class="keyword">if</span> (($param != <span class="keyword">null</span>) <span class="keyword">and</span> (is_string($param))) &#123;</div><div class="line">           $data[<span class="string">'user_id'</span>] = $param;</div><div class="line">       &#125;</div><div class="line">       $query = http_build_query($data);</div><div class="line">       $url = <span class="string">"http://api.geetest.com/register.php?"</span> . $query;</div><div class="line">       $challenge = <span class="keyword">$this</span>-&gt;send_request($url);</div><div class="line">       <span class="keyword">if</span> (strlen($challenge) != <span class="number">32</span>) &#123;</div><div class="line">           <span class="keyword">$this</span>-&gt;failback_process();</div><div class="line">           <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">$this</span>-&gt;success_process($challenge);</div><div class="line">       <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
-<p>4·在composer.json的autoload内的classmap项新增类包,<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">"autoload": &#123;</div><div class="line">       "classmap": [</div><div class="line">           "database",</div><div class="line">           "vendor/geetest"//添加自己的</div><div class="line">       ],</div><div class="line"></div><div class="line">       "psr-4": &#123;</div><div class="line">           "App\\": "app/"</div><div class="line">       &#125;</div><div class="line">   &#125;,</div></pre></td></tr></table></figure></p>
-<p>5·运行终端，cd到项目路径，使用composer命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">composer dumpautoload</div></pre></td></tr></table></figure></p>
-<p>然后就能在项目中愉快的使用GeetestLib类了，简单的用法如下：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">use</span> <span class="title">GeetestLib</span>;</div><div class="line">$GtSdk = <span class="keyword">new</span> GeetestLib()</div></pre></td></tr></table></figure></p>
-<p>6·我是在config文件下新建了sys.php做配置文件方便以后在后台修改<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*验证码配置*/</span></div><div class="line">   <span class="string">'GEE_ID'</span>  =&gt;  <span class="string">'4c65ff2cf2d4ac493e837a91215fff77'</span>,</div><div class="line">   <span class="string">'GEE_KEY'</span> =&gt;  <span class="string">'e9fc13ecf1178f6a59c80f8f42e5773f'</span>,</div></pre></td></tr></table></figure></p>
-<p> 7·在App\Http\Controllers 下创建Geetest控制器方法getVerify()<br> <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Http</span>\<span class="title">Controllers</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">GeetestLib</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">GeetestController</span> <span class="keyword">extends</span> <span class="title">Controller</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getVerify</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="comment">//实例化并传入极验id与key值</span></div><div class="line">        $GtSdk = <span class="keyword">new</span> GeetestLib(config(<span class="string">'sys.GEE_ID'</span>), config(<span class="string">'sys.GEE_KEY'</span>));</div><div class="line">        $user_id = <span class="string">"web"</span>;</div><div class="line">        $status = $GtSdk-&gt;pre_process($user_id);</div><div class="line">        $data = <span class="keyword">array</span>(</div><div class="line">            <span class="string">'gtserver'</span>=&gt;$status,</div><div class="line">            <span class="string">'user_id'</span>=&gt;$user_id</div><div class="line">        );</div><div class="line">        session([<span class="string">'geetest'</span>=&gt;$data]);</div><div class="line"></div><div class="line">        <span class="keyword">echo</span> $GtSdk-&gt;get_response_str();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p> 创建路由<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Route::get(&apos;/getVerify&apos;, &apos;GeetestController@getVerify&apos;)-&gt;name(&apos;getVerify&apos;);</div></pre></td></tr></table></figure></p>
-<p>8·在页面上处理</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div></pre></td><td class="code"><pre><div class="line">@extends('layouts.app')</div><div class="line"></div><div class="line">@section('content')</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-8 col-md-offset-2"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel panel-default"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel-heading"</span>&gt;</span>Login<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel-body"</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"form-horizontal"</span> <span class="attr">role</span>=<span class="string">"form"</span> <span class="attr">method</span>=<span class="string">"POST"</span> <span class="attr">action</span>=<span class="string">"&#123;&#123; route('login') &#125;&#125;"</span>&gt;</span></div><div class="line">                        &#123;&#123; csrf_field() &#125;&#125;</div><div class="line"></div><div class="line">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group&#123;&#123; $errors-&gt;has('email') ? ' has-error' : '' &#125;&#125;"</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"email"</span> <span class="attr">class</span>=<span class="string">"col-md-4 control-label"</span>&gt;</span>E-Mail Address<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"></div><div class="line">                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-6"</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">name</span>=<span class="string">"email"</span> <span class="attr">value</span>=<span class="string">"&#123;&#123; old('email') &#125;&#125;"</span> <span class="attr">required</span> <span class="attr">autofocus</span>&gt;</span></div><div class="line"></div><div class="line">                                @if ($errors-&gt;has('email'))</div><div class="line">                                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"help-block"</span>&gt;</span></div><div class="line">                                        <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; $errors-&gt;first('email') &#125;&#125;<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                                @endif</div><div class="line">                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group&#123;&#123; $errors-&gt;has('password') ? ' has-error' : '' &#125;&#125;"</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span> <span class="attr">class</span>=<span class="string">"col-md-4 control-label"</span>&gt;</span>Password<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"></div><div class="line">                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-6"</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">required</span>&gt;</span></div><div class="line"></div><div class="line">                                @if ($errors-&gt;has('password'))</div><div class="line">                                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"help-block"</span>&gt;</span></div><div class="line">                                        <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; $errors-&gt;first('password') &#125;&#125;<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                                @endif</div><div class="line">                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"embed-captcha"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"wait"</span> <span class="attr">class</span>=<span class="string">"show"</span>&gt;</span>正在加载验证码......<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"notice"</span> <span class="attr">class</span>=<span class="string">"hide"</span>&gt;</span>请先拖动验证码到相应位置<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-6 col-md-offset-4"</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"checkbox"</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;<span class="name">label</span>&gt;</span></div><div class="line">                                        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"remember"</span> &#123;&#123; <span class="attr">old</span>('<span class="attr">remember</span>') ? '<span class="attr">checked</span>' <span class="attr">:</span> '' &#125;&#125;&gt;</span> Remember Me</div><div class="line">                                    <span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-8 col-md-offset-4"</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">id</span>=<span class="string">"but"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">disabled</span>&gt;</span></div><div class="line">                                    Login</div><div class="line">                                <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"></div><div class="line">                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"btn btn-link"</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; route('password.request') &#125;&#125;"</span>&gt;</span></div><div class="line">                                    Forgot Your Password?</div><div class="line">                                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://libs.baidu.com/jquery/1.9.0/jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 引入封装了failback的接口--initGeetest --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://static.geetest.com/static/tools/gt.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">        var handlerEmbed = function (captchaObj) &#123;</div><div class="line">            $("#embed-submit").click(function (e) &#123;</div><div class="line"></div><div class="line">                var validate = captchaObj.getValidate();</div><div class="line">                if (!validate) &#123;</div><div class="line">                    $("#notice")[0].className = "show";</div><div class="line">                    setTimeout(function () &#123;</div><div class="line">                        $("#notice")[0].className = "hide";</div><div class="line"></div><div class="line">                    &#125;, 2000);</div><div class="line">                    e.preventDefault();</div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">            // 将验证码加到id为captcha的元素里</div><div class="line">            captchaObj.appendTo("#embed-captcha");</div><div class="line">            captchaObj.onReady(function () &#123;</div><div class="line">                $("#wait")[0].className = "hide";</div><div class="line">            &#125;);</div><div class="line">            //验证成功</div><div class="line">            captchaObj.onSuccess(function () &#123;</div><div class="line">                $("#but").attr("disabled",false)</div><div class="line">            &#125;);</div><div class="line">            //验证失败</div><div class="line">            captchaObj.onError(function () &#123;</div><div class="line">                $("#but").attr("disabled",true)</div><div class="line">            &#125;);</div><div class="line">            // 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html</div><div class="line">        &#125;;</div><div class="line">        $.ajax(&#123;</div><div class="line">            // 获取id，challenge，success（是否启用failback）</div><div class="line">            url: "&#123;&#123; route('getVerify',array('t'=&gt;time())) &#125;&#125;", // 加随机数防止缓存</div><div class="line">            type: "get",</div><div class="line">            dataType: "json",</div><div class="line">            success: function (data) &#123;</div><div class="line">                console.log(data)</div><div class="line">                // 使用initGeetest接口</div><div class="line">                // 参数1：配置参数</div><div class="line">                // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件</div><div class="line">                initGeetest(&#123;</div><div class="line">                    gt: data.gt,</div><div class="line">                    challenge: data.challenge,</div><div class="line">                    product: "float", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效</div><div class="line">                    offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注</div><div class="line">                &#125;, handlerEmbed);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">@endsection</div></pre></td></tr></table></figure>
-<p>9·初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">login</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    $GtSdk = GeetestLib(config(<span class="string">'sys.GEE_ID'</span>), config(<span class="string">'sys.GEE_KEY'</span>));</div><div class="line">    $geetest = session(<span class="string">"geetest"</span>);</div><div class="line">    $user_id = $geetest[<span class="string">'user_id'</span>];);</div><div class="line">    <span class="keyword">if</span> ($geetest[<span class="string">'gtserver'</span>] == <span class="number">1</span>) &#123;</div><div class="line">        $result = $GtSdk-&gt;success_validate($geetest_challenge, $geetest_validate, $geetest_seccode, $user_id);</div><div class="line">        <span class="keyword">if</span> ($result) &#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">'Yes!'</span>;</div><div class="line">        &#125; <span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">'No'</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">       <span class="keyword">if</span> ($GtSdk-&gt;fail_validate($geetest_challenge, $geetest_validate, $geetest_seccode)) &#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">"yes"</span>;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">"no"</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>然后在页面上就可以看到效果了。<br><img src="http://img.blog.csdn.net/20170605141532676?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY3k4NzY2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+	  <p>你是</p>
 
 
     
     
-    
-	  <div class="full-width auto-padding tags">
-      
-        <a href="/tags/laravel5-4/">laravel5.4</a>
-      
-	  </div>
     
   </section>
 </article>
@@ -227,17 +249,54 @@
   <section class="article typo">
 	  <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
 
     
+	  <div class="readmore">
+      <a href="/2017/06/05/hello-world/">Read More</a>
+    </div>
     
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/01/03/CentOS-1-3/">
+        Centos初始化
+      </a>
+    </h2>
+    
+    <time>
+      1月 3, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/Linux/">Linux</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</div></pre></td></tr></table></figure>
+<h3 id="写入国内源-centos-7"><a href="#写入国内源-centos-7" class="headerlink" title="写入国内源(centos 7)"></a>写入国内源(centos 7)</h3><p>ustc： <a href="https://lug.ustc.edu.cn/wiki/mirrors/help/centos" target="_blank" rel="external">https://lug.ustc.edu.cn/wiki/mirrors/help/centos</a></p>
+
+    
+	  <div class="readmore">
+      <a href="/2017/01/03/CentOS-1-3/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/centos/">centos</a>
+      
+	  </div>
     
   </section>
 </article>
@@ -288,6 +347,16 @@
 <div class='header'>Categories</div>
 <div class='content'>
     
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/Linux/"><div class='name'>Linux</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/php/laravel/"><div class='name'>laravel</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/php/"><div class='name'>php</div><div class='badget'>1</div></a></li>
+    
+    </ul>
+    
 </div>
 </section>
 
@@ -295,7 +364,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/laravel5-4/" style="font-size: 14px; color: #808080">laravel5.4</a>
+        <a href="/tags/centos/" style="font-size: 14px; color: #808080">centos</a> <a href="/tags/geetest/" style="font-size: 14px; color: #808080">geetest</a> <a href="/tags/laravel/" style="font-size: 14px; color: #808080">laravel</a>
     </div>
 </div>
 
@@ -310,12 +379,12 @@
 	<div class="social-wrapper">
   	
       
-        <a href="https://github.com/cjade" class="social github"
+        <a href="https://github.com/stkevintan" class="social github"
           target="_blank" rel="external">
           <span class="icon icon-github"></span>
         </a>
       
-        <a href="https://twitter.com/cjade" class="social twitter"
+        <a href="https://twitter.com/kevinsfork" class="social twitter"
           target="_blank" rel="external">
           <span class="icon icon-twitter"></span>
         </a>
