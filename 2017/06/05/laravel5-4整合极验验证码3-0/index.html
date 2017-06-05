@@ -135,31 +135,31 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-laravel5-4整合极验验证码3-0"
-  class="post white-box article-type-post"
-  itemscope itemprop="blogPost">
-	<section class='meta'>
-	<h2 class="title">
+        <article id="post-laravel5-4整合极验验证码3-0" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <section class='meta'>
+        <h2 class="title">
   	<a href="/2017/06/05/laravel5-4整合极验验证码3-0/">
     	laravel5.4整合极验验证码3.0
     </a>
   </h2>
-	<time>
+        <time>
 	  6月 5, 2017
 	</time>
-	
+        
     
     <div class='cats'>
         <a href="/categories/php/">php</a>, <a href="/categories/php/laravel/">laravel</a>
     </div>
 
-	</section>
-	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#注册账号"><span class="toc-number">1.</span> <span class="toc-text">注册账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载sdk"><span class="toc-number">2.</span> <span class="toc-text">下载sdk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把lib下的class-geetestlib-php修改名称为：GeetestLib-class-ph-修改GeetestLib类里的pre-process-方法"><span class="toc-number">3.</span> <span class="toc-text">把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在composer-json的autoload内的classmap项新增类包"><span class="toc-number">4.</span> <span class="toc-text">在composer.json的autoload内的classmap项新增类包,</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行终端，cd到项目路径，使用composer命令"><span class="toc-number">5.</span> <span class="toc-text">运行终端，cd到项目路径，使用composer命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我是在config文件下新建了sys-php做配置文件方便以后在后台修改"><span class="toc-number">6.</span> <span class="toc-text">我是在config文件下新建了sys.php做配置文件方便以后在后台修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在App-Http-Controllers-下创建Geetest控制器方法getVerify"><span class="toc-number">7.</span> <span class="toc-text">在App\Http\Controllers 下创建Geetest控制器方法getVerify()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在页面上处理"><span class="toc-number">8.</span> <span class="toc-text">在页面上处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是："><span class="toc-number">9.</span> <span class="toc-text">初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是：</span></a></li></ol></section>
-	
-	<section class="article typo">
-  	<div class="article-entry" itemprop="articleBody">
-    	<h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>注册地址:<a href="http://www.geetest.com/" target="_blank" rel="external">http://www.geetest.com/</a><br>注册之后获得最新的ID和KEY</p>
+    </section>
+    
+        <section class="toc-wrapper">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#注册账号"><span class="toc-number">1.</span> <span class="toc-text">注册账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载sdk"><span class="toc-number">2.</span> <span class="toc-text">下载sdk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把lib下的class-geetestlib-php修改名称为：GeetestLib-class-ph-修改GeetestLib类里的pre-process-方法"><span class="toc-number">3.</span> <span class="toc-text">把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在composer-json的autoload内的classmap项新增类包"><span class="toc-number">4.</span> <span class="toc-text">在composer.json的autoload内的classmap项新增类包,</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行终端，cd到项目路径，使用composer命令"><span class="toc-number">5.</span> <span class="toc-text">运行终端，cd到项目路径，使用composer命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我是在config文件下新建了sys-php做配置文件方便以后在后台修改"><span class="toc-number">6.</span> <span class="toc-text">我是在config文件下新建了sys.php做配置文件方便以后在后台修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在App-Http-Controllers-下创建Geetest控制器方法getVerify"><span class="toc-number">7.</span> <span class="toc-text">在App\Http\Controllers 下创建Geetest控制器方法getVerify()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在页面上处理"><span class="toc-number">8.</span> <span class="toc-text">在页面上处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是："><span class="toc-number">9.</span> <span class="toc-text">初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是：</span></a></li></ol>
+        </section>
+        
+            <section class="article typo">
+                <div class="article-entry" itemprop="articleBody">
+                    <h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>注册地址:<a href="http://www.geetest.com/" target="_blank" rel="external">http://www.geetest.com/</a><br>注册之后获得最新的ID和KEY</p>
 <h2 id="下载sdk"><a href="#下载sdk" class="headerlink" title="下载sdk"></a>下载sdk</h2><p>把下载下来的sdk改名为geetest放入vendor文件下<br>可以把geetest文件下的其他文件都删除只保留lib文件</p>
 <h2 id="把lib下的class-geetestlib-php修改名称为：GeetestLib-class-ph-修改GeetestLib类里的pre-process-方法"><a href="#把lib下的class-geetestlib-php修改名称为：GeetestLib-class-ph-修改GeetestLib类里的pre-process-方法" class="headerlink" title="把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法"></a>把lib下的class.geetestlib.php修改名称为：GeetestLib.class.ph 修改GeetestLib类里的pre_process()方法</h2><a id="more"></a>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">pre_process</span><span class="params">($param, $new_captcha=<span class="number">1</span>)</span> </span>&#123;</div><div class="line">        $data = <span class="keyword">array</span>(<span class="string">'gt'</span>=&gt;<span class="keyword">$this</span>-&gt;captcha_id,</div><div class="line">                     <span class="string">'new_captcha'</span>=&gt;$new_captcha</div><div class="line">                );</div><div class="line">        $data = array_merge($data,$param);<span class="comment">//没有修改的这里可能会报错</span></div><div class="line">        $query = http_build_query($data);</div><div class="line">        $url = <span class="string">"http://api.geetest.com/register.php?"</span> . $query;</div><div class="line">        $challenge = <span class="keyword">$this</span>-&gt;send_request($url);</div><div class="line">        <span class="keyword">if</span> (strlen($challenge) != <span class="number">32</span>) &#123;</div><div class="line">            <span class="keyword">$this</span>-&gt;failback_process();</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">$this</span>-&gt;success_process($challenge);</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
@@ -174,28 +174,45 @@
 <h2 id="初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是："><a href="#初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是：" class="headerlink" title="初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是："></a>初始化完成之后的提交时前段会自动验证，然后提交给后台之后处理方法是：</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">login</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    $GtSdk = GeetestLib(config(<span class="string">'sys.GEE_ID'</span>), config(<span class="string">'sys.GEE_KEY'</span>));</div><div class="line">    $geetest = session(<span class="string">"geetest"</span>);</div><div class="line">    $user_id = $geetest[<span class="string">'user_id'</span>];);</div><div class="line">    <span class="keyword">if</span> ($geetest[<span class="string">'gtserver'</span>] == <span class="number">1</span>) &#123;</div><div class="line">        $result = $GtSdk-&gt;success_validate($geetest_challenge, $geetest_validate, $geetest_seccode, $user_id);</div><div class="line">        <span class="keyword">if</span> ($result) &#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">'Yes!'</span>;</div><div class="line">        &#125; <span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">'No'</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">       <span class="keyword">if</span> ($GtSdk-&gt;fail_validate($geetest_challenge, $geetest_validate, $geetest_seccode)) &#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">"yes"</span>;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">echo</span> <span class="string">"no"</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>然后在页面上就可以看到效果了。<br>![]<img src="http://ac-HSNl7zbI.clouddn.com/5DW5lXOGECJCEtWTAmdFusPSXqMwUmA0jyLjRAar.jpg" alt=""></p>
 
-  	</div>
-	  
-	  <div class="article-tags tags">
-      
-        <a href="/tags/laravel/">laravel</a>
-      
-        <a href="/tags/geetest/">geetest</a>
-      
-	  </div>
-    
-	</section>
-	
-		<section id="comments">
-			<div id="disqus_thread"></div>
-		</section>
-	
+                </div>
+                
+                    <div class="article-tags tags">
+                        
+                            <a href="/tags/laravel/">
+                                laravel
+                            </a>
+                            
+                            <a href="/tags/geetest/">
+                                geetest
+                            </a>
+                            
+                    </div>
+                    
+            </section>
+            
+                <section id="comments">
+                    <div id="disqus_thread"></div>
+                </section>
+                
+                    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+                    <script>
+                        var cloudTieConfig = {
+                            url: document.location.href,
+                            sourceId: "",
+                            productKey: "4afa7e2e647a4ce796e196dccd91b207",
+                            target: "cloud-tie-wrapper"
+                        };
+                        var yunManualLoad = true;
+                        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+                    </script>
 </article>
+
 <script>
-	window.subData = {
-		title: 'laravel5.4整合极验验证码3.0',
-		tools: true
-	}
+    window.subData = {
+        title: 'laravel5.4整合极验验证码3.0',
+        tools: true
+    }
 </script>
 
       </div>
