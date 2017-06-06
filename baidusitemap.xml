@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://www.mcoo.me/2017/06/05/laravel5-4%E6%95%B4%E5%90%88%E6%9E%81%E9%AA%8C%E9%AA%8C%E8%AF%81%E7%A0%813-0/</loc>
+    <lastmod>2017-06-05T15:22:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>laravel5.4整合极验验证码3.0</title>
+        <pubTime>2017-06-05T10:06:27.000Z</pubTime>
+        
+        <tag>laravel</tag>
+         
+        <tag>geetest</tag>
+         
+         
+           
+             
+              <breadCrumb title="php" url="http://www.mcoo.me/categories/php/"/>
+          
+             
+              <breadCrumb title="laravel" url="http://www.mcoo.me/categories/php/laravel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.mcoo.me/2017/06/05/hello-world/</loc>
+    <lastmod>2017-06-05T13:02:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-06-05T13:06:27.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.mcoo.me/2017/01/03/CentOS-1-3/</loc>
+    <lastmod>2017-06-05T12:22:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Centos初始化</title>
+        <pubTime>2017-01-03T08:21:43.000Z</pubTime>
+        
+        <tag>centos</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="http://www.mcoo.me/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>
