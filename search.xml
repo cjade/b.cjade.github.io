@@ -5,18 +5,15 @@
     <entry>
       <title><![CDATA[Typora For Markdown 语法]]></title>
       <url>/2017/06/06/Typora%20For%20Markdown%20%E8%AF%AD%E6%B3%95/</url>
-      <content type="html"><![CDATA[<p>#Typora For Markdown 语法</p>
-<p>[TOC]</p>
-<p>###数学表达式</p>
-<p>要启用这个功能，首先到<code>Preference</code>-&gt;<code>Editor</code>中启用。然后使用<code>$</code>符号包裹Tex命令，例如：<code>$lim_{x \to \infty} \ exp(-x)=0$</code>将产生如下的数学表达式：</p>
-<p>$\lim_{x \to \infty} \exp(-x)=0$</p>
+      <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Typora是一个功能强大的Markdown编辑器，使用GFM风格（即大名鼎鼎的github flavored markdown），Typora目前支持Mac OS和Windows，Linux。Typora可以插入数学表达式，插入表情，表格，支持标准的Markdown语法，可以使用标注….，功能强悍！！！还可以导出PDF文件和HTLM文件。实时预览！！！非常牛逼！</p>
+<p><img src="http://ac-HSNl7zbI.clouddn.com/s3KdndHlozbjEzdmJILs5sIAX11TfVQTxrRV5dIw.jpg" alt=""></p>
+<h3 id="数学表达式"><a href="#数学表达式" class="headerlink" title="数学表达式"></a>数学表达式</h3><p>要启用这个功能，首先到<code>Preference</code>-&gt;<code>Editor</code>中启用。然后使用<code>$</code>符号包裹Tex命令，例如：<code>$lim_{x \to \infty} \ exp(-x)=0$</code>将产生如下的数学表达式：</p>
+<p>​                    <img src="http://ac-HSNl7zbI.clouddn.com/R2v5AIt883eSrHf7GXqJpkwBvKqKUACCxFXmuhEt.jpg" alt=""></p>
 <a id="more"></a>
-<p>###下标</p>
-<p>下标使用<code>~</code>包裹，例如：<code>H~2~O</code>将产生H~2~O, 即水的分子式。</p>
-<p>###上标</p>
-<p>上标使用<code>^</code>包裹，例如：<code>y^2^=4</code>将产生表达式y^2^ = 4</p>
-<p>###插入表情:happy:</p>
-<p>使用<code>:happy:</code>输入表情:happy:,使用<code>:sad:</code>输入表情:sad:,使用<code>:cry:</code>输入表情:cry:等。以此类推！</p>
+<h3 id="下标"><a href="#下标" class="headerlink" title="下标"></a>下标</h3><p>下标使用<code>~</code>包裹，例如：<code>H~2~O</code>将产生H~2~O, 即水的分子式。</p>
+<h3 id="上标"><a href="#上标" class="headerlink" title="上标"></a>上标</h3><p>上标使用<code>^</code>包裹，例如：<code>y^2^=4</code>将产生表达式y^2^ = 4</p>
+<pre><code>![](http://ac-HSNl7zbI.clouddn.com/RWXUKXdbdln3GTorBLVdKiijqQcIRKxndbvupeoD.jpg)
+</code></pre><h3 id="插入表情-happy"><a href="#插入表情-happy" class="headerlink" title="插入表情:happy:"></a>插入表情:happy:</h3><p>使用:happy:<code>输入</code>表情:happy:,使用<code>:sad:</code>输入表情:sad:,使用<code>:cry:</code>输入表情:cry:等。以此类推！                    <img src="http://ac-HSNl7zbI.clouddn.com/dLGypStt5aQgR5scOiygR5Gt0ytBJwG5jxUJUaK7.jpg" alt=""></p>
 <h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><p>用HTML的语法<code>&lt;u&gt;Underline&lt;/u&gt;</code>将产生下划线<u>Underline</u>.</p>
 <h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>GFM添加了删除文本的语法，这是标准的Markdown语法木有的。使用<code>~~</code>包裹的文本将会具有删除的样式，例如<code>~删除文本~</code>将产生删除文本的样式。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul>
@@ -70,31 +67,28 @@
 </table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">将产生:</div><div class="line"></div><div class="line">| 姓名   | 性别   | 毕业学校   | 工资   |</div><div class="line">| ---- | ---- | ------ | ---- |</div><div class="line">| 杨洋   | 男    | 重庆交通大学 | 3200 |</div><div class="line">| 峰哥   | 男    | 贵州大学   | 5000 |</div><div class="line">| 坑货   | 女    | 北京大学   | 2000 |</div><div class="line"></div><div class="line">其中代码的第二行指定对齐的方式，第一个是左对齐，第二个和第三个是居中，最后一个是右对齐。</div><div class="line"></div><div class="line">### 数学表达式块</div><div class="line"></div><div class="line">输入两个美元符号，然后回车，就可以输入数学表达式块了。例如：</div></pre></td></tr></table></figure>
 <p> $$\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\end{vmatrix}$$</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">将会产生:</div><div class="line"></div><div class="line">$$\mathbf&#123;V&#125;_1 \times \mathbf&#123;V&#125;_2 = \begin&#123;vmatrix&#125; \mathbf&#123;i&#125; &amp; \mathbf&#123;j&#125; &amp; \mathbf&#123;k&#125; \\frac&#123;\partial X&#125;&#123;\partial u&#125; &amp; \frac&#123;\partial Y&#125;&#123;\partial u&#125; &amp; 0 \\frac&#123;\partial X&#125;&#123;\partial v&#125; &amp; \frac&#123;\partial Y&#125;&#123;\partial v&#125; &amp; 0 \\end&#123;vmatrix&#125;$$</div><div class="line"></div><div class="line">### 任务列表</div><div class="line"></div><div class="line">使用如下的代码创建任务列表，在[]中输入x表示完成，也可以通过点击选择完成或者没完成。</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">将会产生:</div><div class="line"></div><div class="line">![](http://ac-HSNl7zbI.clouddn.com/LiOqubpxjsdlg6Obn0Qt9ruaVHIoQ2MT7m2kqlfb.jpg)</div><div class="line"></div><div class="line">### 任务列表</div><div class="line"></div><div class="line">使用如下的代码创建任务列表，在[]中输入x表示完成，也可以通过点击选择完成或者没完成。</div></pre></td></tr></table></figure>
 <ul>
-<li>[ ] 吃饭</li>
+<li>[x] 吃饭</li>
 <li>[ ] 逛街</li>
 <li>[ ] 看电影</li>
-<li>[ ] 约泡</li>
+<li>[ ] 约泡<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- [x] 吃饭</div><div class="line"></div><div class="line">- [ ] 逛街</div><div class="line"></div><div class="line"></div><div class="line">- [ ] 看电影</div><div class="line"></div><div class="line"></div><div class="line">- [ ] 约泡</div><div class="line"></div><div class="line">### 列表</div><div class="line"></div><div class="line">输入+, -, *,创建无序的列表，使用任意数字开头，创建有序列表，例如：</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- [x] 吃饭</div></pre></td></tr></table></figure>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- [x] 逛街</div></pre></td></tr></table></figure>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- [x] 看电影</div></pre></td></tr></table></figure>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- [x] 约泡</div><div class="line"></div><div class="line">### 列表</div><div class="line"></div><div class="line">输入+, -, *,创建无序的列表，使用任意数字开头，创建有序列表，例如：</div></pre></td></tr></table></figure>
 <p><strong>无序的列表</strong></p>
 <ul>
-<li>tfboys</li>
-<li>杨洋</li>
-<li>我爱你</li>
+<li>php</li>
+<li>mysql</li>
+<li>html<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">**无序的列表**</div><div class="line"></div><div class="line">- php</div><div class="line">- mysql</div><div class="line">- html</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">**无序的列表**</div><div class="line"></div><div class="line">- tfboys</div><div class="line">- 杨洋</div><div class="line">- 我爱你</div></pre></td></tr></table></figure>
 <p><strong>有序的列表</strong></p>
 <ol>
-<li>苹果</li>
-<li>香蕉</li>
-<li>我都不喜欢</li>
+<li>Python</li>
+<li>Golang</li>
+<li>Java<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">**有序的列表**</div><div class="line"></div><div class="line">1. Python</div><div class="line">2. Golang</div><div class="line">3. Java</div><div class="line"></div><div class="line">### 块引用</div><div class="line"></div><div class="line">使用&gt;来插入块引用。例如：</div></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">**有序的列表**</div><div class="line"></div><div class="line">1. 苹果</div><div class="line">2. 香蕉</div><div class="line">3. 我都不喜欢</div><div class="line"></div><div class="line">### 块引用</div><div class="line"></div><div class="line">使用&gt;来插入块引用。例如：</div></pre></td></tr></table></figure>
 <blockquote>
 <p>这是一个块引用！</p>
 </blockquote>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.mcoo.me/"/>
-  <updated>2017-06-06T06:37:29.000Z</updated>
+  <updated>2017-06-06T07:00:35.000Z</updated>
   <id>http://www.mcoo.me/</id>
   
   <author>
@@ -20,15 +20,14 @@
     <link href="http://www.mcoo.me/2017/06/06/Typora%20For%20Markdown%20%E8%AF%AD%E6%B3%95/"/>
     <id>http://www.mcoo.me/2017/06/06/Typora For Markdown 语法/</id>
     <published>2017-06-06T06:31:23.000Z</published>
-    <updated>2017-06-06T06:37:29.000Z</updated>
+    <updated>2017-06-06T07:00:35.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;#Typora For Markdown 语法&lt;/p&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;###数学表达式&lt;/p&gt;
-&lt;p&gt;要启用这个功能，首先到&lt;code&gt;Preference&lt;/code&gt;-&amp;gt;&lt;code&gt;Editor&lt;/code&gt;中启用。然后使用&lt;code&gt;$&lt;/code&gt;符号包裹Tex命令，例如：&lt;code&gt;$lim_{x \to \infty} \ exp(-x)=0$&lt;/code&gt;将产生如下的数学表达式：&lt;/p&gt;
-&lt;p&gt;$\lim_{x \to \infty} \exp(-x)=0$&lt;/p&gt;
+      &lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;Typora是一个功能强大的Markdown编辑器，使用GFM风格（即大名鼎鼎的github flavored markdown），Typora目前支持Mac OS和Windows，Linux。Typora可以插入数学表达式，插入表情，表格，支持标准的Markdown语法，可以使用标注….，功能强悍！！！还可以导出PDF文件和HTLM文件。实时预览！！！非常牛逼！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ac-HSNl7zbI.clouddn.com/s3KdndHlozbjEzdmJILs5sIAX11TfVQTxrRV5dIw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;数学表达式&quot;&gt;&lt;a href=&quot;#数学表达式&quot; class=&quot;headerlink&quot; title=&quot;数学表达式&quot;&gt;&lt;/a&gt;数学表达式&lt;/h3&gt;&lt;p&gt;要启用这个功能，首先到&lt;code&gt;Preference&lt;/code&gt;-&amp;gt;&lt;code&gt;Editor&lt;/code&gt;中启用。然后使用&lt;code&gt;$&lt;/code&gt;符号包裹Tex命令，例如：&lt;code&gt;$lim_{x \to \infty} \ exp(-x)=0$&lt;/code&gt;将产生如下的数学表达式：&lt;/p&gt;
+&lt;p&gt;​                    &lt;img src=&quot;http://ac-HSNl7zbI.clouddn.com/R2v5AIt883eSrHf7GXqJpkwBvKqKUACCxFXmuhEt.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
