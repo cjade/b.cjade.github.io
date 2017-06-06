@@ -19,7 +19,7 @@
 <meta property="og:url" content="http://www.mcoo.me/2017/06/06/学会用各种姿势备份MySQL数据库/index.html">
 <meta property="og:site_name" content="World of Forks">
 <meta property="og:description" content="前言 我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。">
-<meta property="og:updated_time" content="2017-06-06T07:27:44.000Z">
+<meta property="og:updated_time" content="2017-06-06T07:38:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学会用各种姿势备份MySQL数据库">
 <meta name="twitter:description" content="前言 我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。">
@@ -341,9 +341,9 @@
 <tr>
 <th>备份方法</th>
 <th>备份速度</th>
-<th>恢复速度</th>
+<th style="text-align:center">恢复速度</th>
 <th>便捷性</th>
-<th>功能</th>
+<th style="text-align:center">功能</th>
 <th>一般用于</th>
 </tr>
 </thead>
@@ -351,33 +351,33 @@
 <tr>
 <td>cp</td>
 <td>快</td>
-<td>快</td>
+<td style="text-align:center">快</td>
 <td>一般、灵活性低</td>
-<td>很弱</td>
+<td style="text-align:center">很弱</td>
 <td>少量数据备份</td>
 </tr>
 <tr>
 <td>mysqldump</td>
 <td>慢</td>
-<td>慢</td>
+<td style="text-align:center">慢</td>
 <td>一般、可无视存储引擎的差异</td>
-<td>一般</td>
+<td style="text-align:center">一般</td>
 <td>中小型数据量的备份</td>
 </tr>
 <tr>
 <td>lvm2快照</td>
 <td>快</td>
-<td>快</td>
+<td style="text-align:center">快</td>
 <td>一般、支持几乎热备、速度快</td>
-<td>一般</td>
+<td style="text-align:center">一般</td>
 <td>中小型数据量的备份</td>
 </tr>
 <tr>
 <td>xtrabackup</td>
 <td>较快</td>
-<td>较快</td>
+<td style="text-align:center">较快</td>
 <td>实现innodb热备、对存储引擎有要求</td>
-<td>强大</td>
+<td style="text-align:center">强大</td>
 <td>较大规模的备份</td>
 </tr>
 </tbody>

@@ -188,9 +188,9 @@
 <tr>
 <th>备份方法</th>
 <th>备份速度</th>
-<th>恢复速度</th>
+<th style="text-align:center">恢复速度</th>
 <th>便捷性</th>
-<th>功能</th>
+<th style="text-align:center">功能</th>
 <th>一般用于</th>
 </tr>
 </thead>
@@ -198,33 +198,33 @@
 <tr>
 <td>cp</td>
 <td>快</td>
-<td>快</td>
+<td style="text-align:center">快</td>
 <td>一般、灵活性低</td>
-<td>很弱</td>
+<td style="text-align:center">很弱</td>
 <td>少量数据备份</td>
 </tr>
 <tr>
 <td>mysqldump</td>
 <td>慢</td>
-<td>慢</td>
+<td style="text-align:center">慢</td>
 <td>一般、可无视存储引擎的差异</td>
-<td>一般</td>
+<td style="text-align:center">一般</td>
 <td>中小型数据量的备份</td>
 </tr>
 <tr>
 <td>lvm2快照</td>
 <td>快</td>
-<td>快</td>
+<td style="text-align:center">快</td>
 <td>一般、支持几乎热备、速度快</td>
-<td>一般</td>
+<td style="text-align:center">一般</td>
 <td>中小型数据量的备份</td>
 </tr>
 <tr>
 <td>xtrabackup</td>
 <td>较快</td>
-<td>较快</td>
+<td style="text-align:center">较快</td>
 <td>实现innodb热备、对存储引擎有要求</td>
-<td>强大</td>
+<td style="text-align:center">强大</td>
 <td>较大规模的备份</td>
 </tr>
 </tbody>
