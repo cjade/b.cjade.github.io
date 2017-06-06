@@ -146,6 +146,64 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="/2017/06/06/学会用各种姿势备份MySQL数据库/">
+        学会用各种姿势备份MySQL数据库
+      </a>
+    </h2>
+    
+    <time>
+      6月 6, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="/categories/MySql/">MySql</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><pre><code>我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。
+</code></pre><h2 id="为什么需要备份数据？"><a href="#为什么需要备份数据？" class="headerlink" title="为什么需要备份数据？"></a>为什么需要备份数据？</h2><pre><code>其实在前言中也大概说明了为什么要备份数据, 但是我们还是应该具体了解一下为什么要备份数据
+
+在生产环境中我们数据库可能会遭遇各种各样的不测从而导致数据丢失, 大概分为以下几种.
+
+* 硬件故障
+
+* 软件故障
+
+* 自然灾害
+
+* 黑客攻击
+
+* 误操作 (占比最大)
+
+所以, 为了在数据丢失之后能够恢复数据, 我们就需要定期的备份数据, 备份数据的策略要根据不同的应用场景进行定制, 大致有几个参考数值, 我们可以根据这些数值从而定制符合特定环境中的数据备份策略
+
+* 能够容忍丢失多少数据
+
+* 恢复数据需要多长时间
+
+* 需要恢复哪一些数据
+</code></pre>
+
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/mysql/">mysql</a>
+      
+	  </div>
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="/2017/06/05/hello-world/">
         Hello World
       </a>
@@ -266,6 +324,8 @@
     
         <li><a class="flat-box" href="/categories/Linux/"><div class='name'>Linux</div><div class='badget'>1</div></a></li>
     
+        <li><a class="flat-box" href="/categories/MySql/"><div class='name'>MySql</div><div class='badget'>1</div></a></li>
+    
         <li><a class="flat-box" href="/categories/php/laravel/"><div class='name'>laravel</div><div class='badget'>1</div></a></li>
     
         <li><a class="flat-box" href="/categories/php/"><div class='name'>php</div><div class='badget'>1</div></a></li>
@@ -279,7 +339,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="/tags/centos/" style="font-size: 14px; color: #808080">centos</a> <a href="/tags/geetest/" style="font-size: 14px; color: #808080">geetest</a> <a href="/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="/tags/laravel/" style="font-size: 14px; color: #808080">laravel</a>
+        <a href="/tags/centos/" style="font-size: 14px; color: #808080">centos</a> <a href="/tags/geetest/" style="font-size: 14px; color: #808080">geetest</a> <a href="/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="/tags/laravel/" style="font-size: 14px; color: #808080">laravel</a> <a href="/tags/mysql/" style="font-size: 14px; color: #808080">mysql</a>
     </div>
 </div>
 
