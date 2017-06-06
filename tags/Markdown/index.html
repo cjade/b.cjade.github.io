@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>学会用各种姿势备份MySQL数据库 | World of Forks</title>
+  <title>Tag: Markdown | World of Forks</title>
   <meta name="description" content="A blog of Jason" />
   <meta name="keywords" content="blog,cjade,IT,Web,PHP,PHP框架,Python,Go,Golang,laravel,mysql,文档,教程,中文,资源,学习" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,17 +12,16 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="World of Forks">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。">
-<meta name="keywords" content="mysql">
-<meta property="og:type" content="article">
-<meta property="og:title" content="学会用各种姿势备份MySQL数据库">
-<meta property="og:url" content="http://www.mcoo.me/2017/06/06/学会用各种姿势备份MySQL数据库/index.html">
+  <meta name="description" content="A blog of Jason">
+<meta name="keywords" content="blog,cjade,IT,Web,PHP,PHP框架,Python,Go,Golang,laravel,mysql,文档,教程,中文,资源,学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="World of Forks">
+<meta property="og:url" content="http://www.mcoo.me/tags/Markdown/index.html">
 <meta property="og:site_name" content="World of Forks">
-<meta property="og:description" content="前言我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。">
-<meta property="og:updated_time" content="2017-06-06T06:29:37.000Z">
+<meta property="og:description" content="A blog of Jason">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学会用各种姿势备份MySQL数据库">
-<meta name="twitter:description" content="前言我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。">
+<meta name="twitter:title" content="World of Forks">
+<meta name="twitter:description" content="A blog of Jason">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -134,87 +133,61 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-学会用各种姿势备份MySQL数据库" class="post white-box article-type-post" itemscope itemprop="blogPost">
-    <section class='meta'>
-        <h2 class="title">
-  	<a href="/2017/06/06/学会用各种姿势备份MySQL数据库/">
-    	学会用各种姿势备份MySQL数据库
-    </a>
-  </h2>
-        <time>
-	  6月 6, 2017
-	</time>
         
+  <script>
+    window.subData= { title:'Tag : Markdown'}
+  </script>
+
+<section class="post-list">
+	
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
+      <a href="/2017/06/06/Typora For Markdown 语法/">
+        Typora For Markdown 语法
+      </a>
+    </h2>
+    
+    <time>
+      6月 6, 2017
+    </time>
+		
     
     <div class='cats'>
-        <a href="/categories/MySql/">MySql</a>
+        <a href="/categories/Markdown/">Markdown</a>
     </div>
 
-    </section>
+  </section>
+  <section class="article typo">
+	  <p>#Typora For Markdown 语法</p>
+<p>[TOC]</p>
+<p>###数学表达式</p>
+<p>要启用这个功能，首先到<code>Preference</code>-&gt;<code>Editor</code>中启用。然后使用<code>$</code>符号包裹Tex命令，例如：<code>$lim_{x \to \infty} \ exp(-x)=0$</code>将产生如下的数学表达式：</p>
+<p>$\lim_{x \to \infty} \exp(-x)=0$</p>
+
     
-        <section class="toc-wrapper">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么需要备份数据？"><span class="toc-number">2.</span> <span class="toc-text">为什么需要备份数据？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据的备份类型"><span class="toc-number">3.</span> <span class="toc-text">数据的备份类型</span></a></li></ol>
-        </section>
-        
-            <section class="article typo">
-                <div class="article-entry" itemprop="articleBody">
-                    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们试着想一想, 在生产环境中什么最重要？如果我们服务器的硬件坏了可以维修或者换新, 软件问题可以修复或重新安装, 但是如果数据没了呢？这可能是最恐怖的事情了吧, 我感觉在生产环境中应该没有什么比数据跟更为重要. 那么我们该如何保证数据不丢失、或者丢失后可以快速恢复呢？只要看完这篇, 大家应该就能对MySQL中实现数据备份和恢复能有一定的了解。</p>
-<a id="more"></a>
-<h2 id="为什么需要备份数据？"><a href="#为什么需要备份数据？" class="headerlink" title="为什么需要备份数据？"></a>为什么需要备份数据？</h2><p>其实在前言中也大概说明了为什么要备份数据, 但是我们还是应该具体了解一下        为什么要备份数据</p>
-<p>在生产环境中我们数据库可能会遭遇各种各样的不测从而导致数据丢失, 大概分为以下几种.</p>
-<ul>
-<li>硬件故障</li>
-<li>软件故障</li>
-<li>自然灾害</li>
-<li>黑客攻击</li>
-<li>误操作 (占比最大)</li>
-</ul>
-<p>所以, 为了在数据丢失之后能够恢复数据, 我们就需要定期的备份数据, 备份数据的策略要根据不同的应用场景进行定制, 大致有几个参考数值, 我们可以根据这些数值从而定制符合特定环境中的数据备份策略</p>
-<ul>
-<li>能够容忍丢失多少数据</li>
-<li>恢复数据需要多长时间</li>
-<li>需要恢复哪一些数据</li>
-</ul>
-<h2 id="数据的备份类型"><a href="#数据的备份类型" class="headerlink" title="数据的备份类型"></a>数据的备份类型</h2><ul>
-<li>[x] ds</li>
-</ul>
-
-                </div>
-                
-                    <div class="article-tags tags">
-                        
-                            <a href="/tags/mysql/">
-                                mysql
-                            </a>
-                            
-                    </div>
-                    
-            </section>
-            
-                <section id="comments">
-                    <div id="disqus_thread"></div>
-                </section>
-                
-                    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-                    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-                    <script>
-                        var cloudTieConfig = {
-                            url: document.location.href,
-                            sourceId: "",
-                            productKey: "4afa7e2e647a4ce796e196dccd91b207",
-                            target: "cloud-tie-wrapper"
-                        };
-                        var yunManualLoad = true;
-                        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-                    </script>
+	  <div class="readmore">
+      <a href="/2017/06/06/Typora For Markdown 语法/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="/tags/Markdown/">Markdown</a>
+      
+        <a href="/tags/Typora/">Typora</a>
+      
+	  </div>
+    
+  </section>
 </article>
+    </div>
+  
+</section>
 
-<script>
-    window.subData = {
-        title: '学会用各种姿势备份MySQL数据库',
-        tools: true
-    }
-</script>
 
       </div>
       <aside class='l_side'>
@@ -336,13 +309,11 @@
 <script>
   var disqus_shortname = 'kevinhome';
   
-  var disqus_url = 'http://www.mcoo.me/2017/06/06/学会用各种姿势备份MySQL数据库/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.mcoo.me/"/>
-  <updated>2017-06-06T06:20:19.000Z</updated>
+  <updated>2017-06-06T06:37:29.000Z</updated>
   <id>http://www.mcoo.me/</id>
   
   <author>
@@ -16,11 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Typora For Markdown 语法</title>
+    <link href="http://www.mcoo.me/2017/06/06/Typora%20For%20Markdown%20%E8%AF%AD%E6%B3%95/"/>
+    <id>http://www.mcoo.me/2017/06/06/Typora For Markdown 语法/</id>
+    <published>2017-06-06T06:31:23.000Z</published>
+    <updated>2017-06-06T06:37:29.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#Typora For Markdown 语法&lt;/p&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;###数学表达式&lt;/p&gt;
+&lt;p&gt;要启用这个功能，首先到&lt;code&gt;Preference&lt;/code&gt;-&amp;gt;&lt;code&gt;Editor&lt;/code&gt;中启用。然后使用&lt;code&gt;$&lt;/code&gt;符号包裹Tex命令，例如：&lt;code&gt;$lim_{x \to \infty} \ exp(-x)=0$&lt;/code&gt;将产生如下的数学表达式：&lt;/p&gt;
+&lt;p&gt;$\lim_{x \to \infty} \exp(-x)=0$&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://www.mcoo.me/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://www.mcoo.me/tags/Markdown/"/>
+    
+      <category term="Typora" scheme="http://www.mcoo.me/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
     <title>学会用各种姿势备份MySQL数据库</title>
     <link href="http://www.mcoo.me/2017/06/06/%E5%AD%A6%E4%BC%9A%E7%94%A8%E5%90%84%E7%A7%8D%E5%A7%BF%E5%8A%BF%E5%A4%87%E4%BB%BDMySQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://www.mcoo.me/2017/06/06/学会用各种姿势备份MySQL数据库/</id>
     <published>2017-06-06T05:07:46.000Z</published>
-    <updated>2017-06-06T06:20:19.000Z</updated>
+    <updated>2017-06-06T06:29:37.000Z</updated>
     
     <summary type="html">
     
